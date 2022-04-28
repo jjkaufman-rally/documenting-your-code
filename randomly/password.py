@@ -7,16 +7,16 @@ def generate_password(
     chars: int,
     punctuation: bool,
     invalid_chars: Optional[list] = None
-) -> string:
-    """
-    Create a string of random characters
+) -> str:
+    """Create a string of random characters
+
     Args:
         chars: number of characters in return string
         punctuation: whether to use punctuation characters
         invalid_chars: list of characters not to use
 
     Returns:
-        password: string of random characters
+        str: A string of random characters
     """
     valid_chars = string.ascii_letters + string.digits
 
